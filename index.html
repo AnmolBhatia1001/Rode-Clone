@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RODE Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            screens: {
+                sm : '480px',
+                md : '768px',
+                lg : '1024px',
+                xl : '1440px',
+            },
+            extend: {
+              colors: {
+                color01 : "#ad9970",
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    </script>
+    
+</head>
+<body>
+    <!-- NavBar-Top -->
+    <div class="hidden lg:flex justify-between items-center px-28 py-1 border-b-2">
+        <!-- language -->
+        <div class="flex gap-1 items-center ">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+            </div>
+
+            <h2>EN</h2>
+
+            <div>
+                <a href="">
+                    <img src="./assets/icons8-down-24.png" width="12px">
+                </a>
+            </div>
+        </div>
+
+        <!-- User -->
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- NavBar-Main -->
+    <nav class="flex flex justify-between px-28 py-6">
+        <!-- Small Screen Menu  -->
+        <div class="flex items-center lg:hidden">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </div>
+
+            <div class="flex ml-3 items-center gap-1">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                </div>
+
+                <h2>EN</h2>
+
+                <div>
+                    <img src="./assets/icons8-down-24.png" width="12px">
+                </div>
+            </div>
+        </div>
+
+        <!-- Logo -->
+        <div class="flex">
+            <img style="filter: brightness(0) saturate(100%)" 
+            src="https://cdn.rode.com/website/images/logo/RODE_Logo_inverse_87x51_RGB.svg"
+            width="88px" >
+        </div>
+
+        <!-- Nav Item -->
+        <div class="hidden lg:flex">
+            <a class="px-4 py-1 text-[18px] font-normal font-inter" href="">PRODUCTS</a>
+            <a class="px-4 py-1 text-[18px] font-normal font-inter" href="">USER GUIDES</a>
+            <a class="px-4 py-1 text-[18px] font-normal font-inter" href="">SOLUTIONS</a>
+            <a class="px-4 py-1 text-[18px] font-normal font-inter"  class="px-4 py-1 text-[18px] font-normal font-inter"href="">APPAREL</a>
+            <a class="px-4 py-1 text-[18px] font-normal font-inter" href="">SUPPORT</a>
+        </div>
+
+        <!-- Search -->
+        <div >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+        </div>
+    </nav>
+
+    <!-- CTA Section -->
+    <section>
+        <!-- container -->
+        <div class="bg-black lg:h-[635px] xl:h-[675px]">
+            <!-- for pc -->
+            <div class="hidden bg-[url('https://edge.rode.com/images/page/1/modules/5813/rode-rodecaster-pro-II-home-page-1920x700-rgb.jpg')]   justify-center items-center h-auto bg-no-repeat bg-center bg-cover lg:flex lg:h-[635px] xl:-h-[675px]">
+                <!-- container -01 left  -->
+                <div class="w-2/5 ">
+
+                </div>
+                <!-- container -02 right  -->
+                <div class="flex flex-col items-center justify-center p-1 w-2/5 ">
+                    <!-- logo -->
+                    <img class="h-auto lg:h-12 xl:h-14"
+                    src="https://edge.rode.com/images/page/1/modules/5813/RODECasterProII_PL_PI_01.svg" 
+                    >
+
+                    <!-- text -->
+                    <h3 class="mt-6 text-center text-white text-xl lg:text-2xl font-medium">
+                        The Revolution Is Here
+                    </h3>
+
+                    <!-- sub-text -->
+                    <p class="mt-3  text-center text-[#798b84] text-md lg:text-lg font-normal">
+                        The RØDECaster Pro II is the world's most powerful all-in-one audio solution for streamers, podcasters, musicians, and creators. Take your content to the next level.
+                    </p>
+
+                    <!-- btn -->
+                    <div class="mt-8 flex gap-3">
+                        <!-- learn more btn -->
+                        <a href="" class="flex items-center justify-center p-2 text-xl text-[#ad976d] font-bold">
+                            Learn More
+                            <i class="fa-solid fa-chevron-right  pl-2"></i>
+                        </a>
+
+                        <!-- buy now btn -->
+                        <a href="" class="bg-[#ad9970] rounded-full px-6 py-1.5 text-lg text-white font-bold">
+                            BUY NOW
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- for mobile -->
+            <div class="flex flex-col items-center lg:hidden max-w-auto">
+                <!-- image -->
+                <div class="">
+                    <img src="https://edge.rode.com/images/page/1/modules/5813/rode-rodecaster-pro-II-home-page-800x700-rgb.jpg">
+                </div>
+
+                <!-- text -->
+                <div class="flex flex-col justify-center items-center px-5 pt-5">
+                    <!-- logo -->
+                    <img class="h-10 lg:h-12 xl:h-14"
+                    src="https://edge.rode.com/images/page/1/modules/5813/RODECasterProII_PL_PI_01.svg" 
+                    >
+
+                    <!-- text -->
+                    <h3 class="mt-6 text-center text-white text-lg lg:text-2xl font-medium">
+                        The Revolution Is Here
+                    </h3>
+
+                    <!-- sub-text -->
+                    <p class="mt-3  text-center text-[#798b84] text-sm lg:text-lg font-normal">
+                        The RØDECaster Pro II is the world's most powerful all-in-one audio solution for streamers, podcasters, musicians, and creators. Take your content to the next level.
+                    </p>
+
+                    <!-- btn -->
+                    <div class="mt-8 flex gap-3">
+                        <!-- learn more btn -->
+                        <a href="" class="flex items-center justify-center p-2 text-lg text-[#ad976d] font-bold">
+                            Learn More
+                            <i class="fa-solid fa-chevron-right  pl-2"></i>
+                        </a>
+
+                        <!-- buy now btn -->
+                        <a href="" class="flex items-center bg-[#ad9970] rounded-full px-5 py-[0px] text-md text-white font-bold">
+                            BUY NOW
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+</body>
+</html>
